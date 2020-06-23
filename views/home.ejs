@@ -105,7 +105,7 @@
                   <p class="number text-center font-weight-bold">
                     <%= leaders[i].points %>
                   </p>
-                  <p class="d-inline">PROFILE</p>
+                  <p class="d-inline"><%= leaders[i].username %></p>
                   <p class="d-inline para-two">MESSAGE</p>
                 </div>
                 <% } %>
@@ -122,9 +122,10 @@
         <table class="table table-hover">
           <thead class="title-head my-title">
             <th class="table-font">Rank</th>
-            <th class="table-font">Intern</th>
-            <th class="table-font">Track</th>
-            <th class="table-font">points</th>
+            <th class="table-font">Name</th>
+            <th class="table-font">Username</th>
+            <th class="table-font">Email</th>
+            <th class="table-font">Points</th>
           </thead>
           <% let rank = 4; %> <% let slicedLeaders = leaders.slice(3); %> <%
           slicedLeaders.forEach(function(leader) { %>
@@ -133,6 +134,9 @@
             <% rank++ %>
             <td class="table-font my-details">
               <%= leader.fullName %>
+            </td>
+            <td class="table-font my-details">
+              <%= leader.username %>
             </td>
             <td class="table-font my-details"><%= leader.email %></td>
             <th class="table-font my-points"><%= leader.points %></th>
