@@ -1,22 +1,20 @@
-{
-  "leaders": [
-    {
-      "fullName": "Vital Gatera",
-      "username": "@Vital",
-      "email": "vgatera@gmail.com",
-      "points": "24"
-    },
-    {
-      "fullName": "Raissa Gakuba",
-      "username": "@Raissa",
-      "email": "raissagak@gmail.com",
-      "points": "28"
-    },
-    {
-      "fullName": "Emma Habi",
-      "username": "@Emma",
-      "email": "emma@gmail.com",
-      "points": "25"
-    }
-  ]
-}
+[
+  {
+    "fullName": "Vital Gatera",
+    "username": "@Vital",
+    "email": "vgatera@gmail.com",
+    "points": "24"
+  },
+  {
+    "fullName": "Raissa Gakuba",
+    "username": "@Raissa",
+    "email": "raissagak@gmail.com",
+    "points": "28"
+  },
+  {
+    "fullName": "Emma Habi",
+    "username": "@Emma",
+    "email": "emma@gmail.com",
+    "points": "25"
+  }
+]

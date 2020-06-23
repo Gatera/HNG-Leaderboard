@@ -1,22 +1,180 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Leaderboard</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leadership Board</title>
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-    <body>
-      <% let rank = 0; %> <% leaders.forEach(function(leader) { %>
-      <div class="lsit">
-        <h1><%= rank %></h1>
-        <% rank++ %>
-        <p><%= leader.fullName %></p>
-        <p><%= leader.rank %></p>
-        <p><%= leader.username %></p>
-        <p><%= leader.email %></p>
-        <p><%= leader.points %></p>
-      </div>
-      <% }) %>
-    </body>
+    <!--CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/leadership.css" />
   </head>
+  <body>
+    <div class="mx-0 mt-5 w-100">
+      <div class="container mx-0 p-0">
+        <div class="w-100 row m-0 p-0">
+          <div class="sidebar col-3 w-25">
+            <div class="logo center">
+              <img src="/img/hng.svg" alt="logo" />
+            </div>
+            <div class="menu">
+              <ul class="pl-2 py-5 center">
+                <li class="py-3">
+                  <a href=""
+                    ><span class="pr-3"><img src="/img/dash.svg" alt="" /></span
+                    >Dashboard</a
+                  >
+                </li>
+                <li class="py-3">
+                  <a href=""
+                    ><span class="pr-3"
+                      ><img src="/img/setting.svg" alt="" /></span
+                    >Settings</a
+                  >
+                </li>
+                <li class="py-3">
+                  <a href=""
+                    ><span class="pr-3"><img src="img/track.svg" alt="" /></span
+                    >Tracks</a
+                  >
+                </li>
+                <li class="py-3">
+                  <a href=""
+                    ><span class="pr-3"
+                      ><img src="img/clases.svg" alt="" /></span
+                    >Clases</a
+                  >
+                </li>
+                <li class="py-3">
+                  <a href=""
+                    ><span class="pr-3"
+                      ><img class="board" src="/img/board.svg" alt="" /></span
+                    >LeaderBoard</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="power center mt-5">
+              <a href=""><img src="img/power.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="main-bar col-9 p-0">
+            <div class="form pt-4 pr-5">
+              <input class="mr-4" type="text" placeholder="Type something" />
+              <a class="mx-2 p-1" href=""><img src="/img/bell.svg" /></a>
+              <a class="mx-2 p-1" href=""><img src="/img/share.svg" /></a>
+            </div>
+            <div class="leaderboard">
+              <div class="row w-100 mt-5 mx-0 pt-5">
+                <div class="intern col-4">
+                  <p>
+                    Top Intern<span class="medal"
+                      ><img src="/img/medal1.svg" alt=""
+                    /></span>
+                  </p>
+                  <div>
+                    <span class="material-icons d-block text-center">
+                      account_circle
+                    </span>
+                  </div>
+                  <p class="name text-center font-weight-bold">Jane Doe</p>
+                  <p class="role text-center">UI/UX Developer</p>
+                  <hr />
+                  <p class="number text-center font-weight-bold">200</p>
+                  <p class="d-inline">PROFILE</p>
+                  <p class="d-inline para-two">MESSAGE</p>
+                </div>
+                <div class="intern col-4">
+                  <p>
+                    Top Intern<span class="medal"
+                      ><img src="/img/medal2.svg" alt=""
+                    /></span>
+                  </p>
+                  <div class="icon">
+                    <span class="material-icons d-block text-center">
+                      account_circle
+                    </span>
+                  </div>
+                  <p class="name text-center font-weight-bold">Jane Doe</p>
+                  <p class="role text-center">UI/UX Developer</p>
+                  <hr />
+                  <p class="number text-center font-weight-bold">200</p>
+                  <p class="d-inline">PROFILE</p>
+                  <p class="d-inline para-two">MESSAGE</p>
+                </div>
+                <div class="intern col-4">
+                  <p>
+                    Top Intern<span class="medal"
+                      ><img src="/img/medal3.svg" alt=""
+                    /></span>
+                  </p>
+                  <div>
+                    <span class="material-icons d-block text-center">
+                      account_circle
+                    </span>
+                  </div>
+                  <p class="name text-center font-weight-bold">Jane Doe</p>
+                  <p class="role text-center">UI/UX Developer</p>
+                  <hr />
+                  <p class="number text-center font-weight-bold">200</p>
+                  <p class="d-inline">PROFILE</p>
+                  <p class="d-inline para-two">MESSAGE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    >
+    <div class="container" id="con-column">
+      <div class="row">
+        <table class="table table-hover">
+          <thead class="title-head my-title">
+            <th class="table-font">Rank</th>
+            <th class="table-font">Intern</th>
+            <th class="table-font">Track</th>
+            <th class="table-font">points</th>
+          </thead>
+          <% let rank = 1; %> <% leaders.forEach(function(leader) { %>
+          <tr>
+            <td class="table-font my-details"><%= rank %></td>
+            <% rank++ %>
+            <td class="table-font my-details">
+              <i class="fa fa-circle" aria-hidden="true"></i><%= leader.fullName
+              %>
+            </td>
+            <td class="table-font my-details"><%= leader.email %></td>
+            <th class="table-font my-points"><%= leader.points %></th>
+          </tr>
+          <% }) %>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>

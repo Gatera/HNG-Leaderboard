@@ -19,11 +19,11 @@ app.use(express.static("public"));
 
 // app.locals.leadersData = require("./leaderboard.json");
 
-const data = fs.readFileSync("leaderboard.json");
+const data = fs.readFileSync("hng-leaderboard.json");
 const leadersData = JSON.parse(data);
 
 app.get("/", function (req, res) {
-  const leadersList = leadersData.leaders;
+  const leadersList = leadersData;
   const sortedLeaders = leadersList.sort(function (a, b) {
     return b.points - a.points;
   });
