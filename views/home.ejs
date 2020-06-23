@@ -90,6 +90,7 @@
             </div>
             <div class="leaderboard">
               <div class="row w-100 mt-5 mx-0 pt-5">
+                <% for (let i=0; i<3; i++) { %>
                 <div class="intern col-4">
                   <p>
                     Top Intern<span class="medal"
@@ -101,49 +102,18 @@
                       account_circle
                     </span>
                   </div>
-                  <p class="name text-center font-weight-bold">Jane Doe</p>
-                  <p class="role text-center">UI/UX Developer</p>
-                  <hr />
-                  <p class="number text-center font-weight-bold">200</p>
-                  <p class="d-inline">PROFILE</p>
-                  <p class="d-inline para-two">MESSAGE</p>
-                </div>
-                <div class="intern col-4">
-                  <p>
-                    Top Intern<span class="medal"
-                      ><img src="/img/medal2.svg" alt=""
-                    /></span>
+                  <p class="name text-center font-weight-bold">
+                    <%= leaders[i].fullName %>
                   </p>
-                  <div class="icon">
-                    <span class="material-icons d-block text-center">
-                      account_circle
-                    </span>
-                  </div>
-                  <p class="name text-center font-weight-bold">Jane Doe</p>
-                  <p class="role text-center">UI/UX Developer</p>
+                  <p class="role text-center"><%= leaders[i].email %></p>
                   <hr />
-                  <p class="number text-center font-weight-bold">200</p>
-                  <p class="d-inline">PROFILE</p>
-                  <p class="d-inline para-two">MESSAGE</p>
-                </div>
-                <div class="intern col-4">
-                  <p>
-                    Top Intern<span class="medal"
-                      ><img src="/img/medal3.svg" alt=""
-                    /></span>
+                  <p class="number text-center font-weight-bold">
+                    <%= leaders[i].points %>
                   </p>
-                  <div>
-                    <span class="material-icons d-block text-center">
-                      account_circle
-                    </span>
-                  </div>
-                  <p class="name text-center font-weight-bold">Jane Doe</p>
-                  <p class="role text-center">UI/UX Developer</p>
-                  <hr />
-                  <p class="number text-center font-weight-bold">200</p>
                   <p class="d-inline">PROFILE</p>
                   <p class="d-inline para-two">MESSAGE</p>
                 </div>
+                <% } %>
               </div>
             </div>
           </div>
@@ -161,7 +131,8 @@
             <th class="table-font">Track</th>
             <th class="table-font">points</th>
           </thead>
-          <% let rank = 1; %> <% leaders.forEach(function(leader) { %>
+          <% let rank = 4; %> <% let slicedLeaders = leaders.slice(3); %> <%
+          slicedLeaders.forEach(function(leader) { %>
           <tr>
             <td class="table-font my-details"><%= rank %></td>
             <% rank++ %>
