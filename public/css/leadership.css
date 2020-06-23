@@ -1,163 +1,159 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    color: #C2CDDB;
+  color: #c2cddb;
 }
 .container {
-    max-width: 100%;
+  max-width: 100%;
 }
 .center {
-    margin: auto;
+  margin: auto;
 }
-.logo, .menu ul, .power {
-    width: fit-content;
+.logo,
+.menu ul,
+.power {
+  width: fit-content;
 }
 .menu ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 .menu li a {
-    color: #C2CDDB;
+  color: #c2cddb;
 }
 .menu li:hover {
-    color: #00AEFF;
-    border-left: 8px solid #00AEFF;
+  color: #00aeff;
+  border-left: 8px solid #00aeff;
 }
-.menu li a:hover, .form a:hover {
-    color: #00AEFF;
-    text-decoration: none;
+.menu li a:hover,
+.form a:hover {
+  color: #00aeff;
+  text-decoration: none;
 }
 .menu li img:hover {
-    color: #00AEFF;
+  color: #00aeff;
 }
 .menu .board {
-    color: #C2CDDB;
+  color: #c2cddb;
 }
 .main-bar {
-    background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
-.form, .para-two {
-    float: right;
+.form,
+.para-two {
+  float: right;
 }
 .form a {
-    background-color: white;
+  background-color: white;
 }
 input {
-    font-size: 10px;
-    border: 1px solid #C2CDDB;
-    padding: 5px 50px 5px 5px;
+  font-size: 10px;
+  border: 1px solid #c2cddb;
+  padding: 5px 50px 5px 5px;
 }
 .intern {
-    max-width: 30%;
-    border: 1px solid white;
-    background-color: white;
-    margin: auto;
+  max-width: 30%;
+  border: 1px solid white;
+  background-color: white;
+  margin: auto;
 }
 .name {
-    color: black;
+  color: black;
 }
 hr {
-    width: 80%;
+  width: 80%;
 }
 .medal {
-    float: right;
+  float: right;
 }
 .material-icons {
-    font-size: 120px;
+  font-size: 120px;
 }
 .number {
-    color: #00AEFF;
-    font-size: 18px;
-    line-height: 21px;
+  color: #00aeff;
+  font-size: 18px;
+  line-height: 21px;
 }
 
-
-.table-font{
-    font-size: 16px;
-    padding: 10px !important;
+.table-font {
+  font-size: 16px;
+  padding: 10px !important;
 }
 
-#con-column{
-    position: absolute;
-    width: 1100px;
-    height: 441px;
-    left: 370px;
-    top: 569px;
-    margin-left: 30px;
-    
-    background: #FFFFFF;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+#con-column {
+  position: absolute;
+  width: 1100px;
+  height: 441px;
+  margin-left: 90px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-.my-title{
-    
-    width: 96px;
-    height: 21px;
-    left: 1197px;
-    top: 588px;
+.my-title {
+  width: 96px;
+  height: 21px;
+  left: 1197px;
+  top: 588px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
 
-
-    color: #C2CDDB;
+  color: #c2cddb;
 }
 
-.my-points{
-    width: 32px;
-    height: 21px;
-    left: 1197px;
-    top: 650px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-    
-    
-    color: #00AEFF;
+.my-points {
+  width: 32px;
+  height: 21px;
+  left: 1197px;
+  top: 650px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #00aeff;
 }
 
-.my-details{
-    width: 70px;
-    height: 21px;
-    left: 766px;
-    top: 712px;
+.my-details {
+  width: 70px;
+  height: 21px;
+  left: 766px;
+  top: 712px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
 
-
-    color: #000000;
+  color: #000000;
 }
 
-.interns-leader{
-    width: 328px;
-    height: 42px;
-    left: 372px;
-    top: 474px;
-    padding-top: 100px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    
-    color: #C2CDDB;
+.interns-leader {
+  width: 328px;
+  height: 42px;
+  left: 372px;
+  top: 474px;
+  padding-top: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #c2cddb;
 }
 
-.col-bar{
-    background-color: #E5E5E5; 
+.col-bar {
+  background-color: #e5e5e5;
 }
-  
