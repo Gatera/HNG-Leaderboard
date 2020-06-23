@@ -106,7 +106,14 @@
                     <%= leaders[i].points %>
                   </p>
                   <p class="d-inline"><%= leaders[i].username %></p>
-                  <p class="d-inline para-two">MESSAGE</p>
+                  <% let url =
+                  "https://twitter.com/intent/tweet?text=Hello,%20my%20points%20in%20HNG%20is%20"
+                  + leaders[i].points %>
+                  <p class="d-inline para-two">
+                    <a class="mx-2 p-1" target="_blank" href="<%=url%>"
+                      ><img src="/img/share.svg"
+                    /></a>
+                  </p>
                 </div>
                 <% } %>
               </div>
