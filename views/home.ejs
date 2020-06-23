@@ -140,6 +140,14 @@
             </td>
             <td class="table-font my-details"><%= leader.email %></td>
             <th class="table-font my-points"><%= leader.points %></th>
+            <td class="table-font my-details">
+              <% let url =
+              "https://twitter.com/intent/tweet?text=Hello,%20my%20points%20in%20HNG%20is%20"
+              + leader.points %>
+              <a class="mx-2 p-1" target="_blank" href="<%=url%>"
+                ><img src="/img/share.svg"
+              /></a>
+            </td>
           </tr>
           <% }) %>
         </table>
